@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            demo
+        </title>
+        <style> 
+            .back{
+                background-image: url('home-background.jpg');
+                background-size: cover;
+                background-color: red;
+                height: 800px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+    }
+            *{
+                margin : 0px;
+            }
+            .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+
+.nav--txt {
+    display: flex;
+    column-gap: 25px;
+    color: #f36e26;
+    font-size: 12px;
+    font-weight: 400;
+}
+            a{
+                color : white;
+                text-decoration :none;
+            } 
+            .select{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding-top: 25px;
+                gap: 50px 50px;
+            }
+            
+
+.select img{
+transition: 1s ease;
+}
+
+.select img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+box-shadow: 0 0 0 10px #000000;
+}
+
+            
+
+           
+           
+           
+</style>
+</head>
+<body>
+    <div class="nav">
+        <img src="logo.png" height=100px width=100px className="icon" />
+        
+        <div class="nav--txt">  
+            <h2><a link href="home.html">HOME</a></h2>
+            <h2><a link href="getcoaches.php">COACHES</a></h2>
+            <h2><a href="getplayers.php">PLAYERS</a></h2>
+            <h2>TEAMS</h2>
+            <h2><a href="gettournaments.php">TOURNAMENTS</a></h2>
+            <h2><a href="getcourt.php">COURTS</a></h2>
+            <h2><a href="getequipments.php">EQUIPMENTS</a></h2>
+            
+        </div> 
+    </div>
+    <div class ="back">
+        <div class="select">
+            
+            <a href="getfootballplayers.php"><img src="football.jpg" height="250px" width="250px"></a></img><a href="getcricketplayers.php"><img src="cricket.jpg" height="250px" width="250px" class="cricket"></img></a>
+        
+            <a href="getbasketballplayers.php"><img src="basketball.jpg" height="250px" width="250px"></a></img><a href="getbadmintonplayers.php"><img src="badminton.jpg" height="250px" width="250px"></img></a>
+        </div>   
+    </div>
+</body>
